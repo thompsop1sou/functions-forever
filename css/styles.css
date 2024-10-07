@@ -1,0 +1,201 @@
+/* HTML and Body */
+
+html {
+    background-color: hsl(210, 6.25%, 25%);
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 400px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px black;
+    margin: 0px auto;
+}
+
+
+header {
+    padding: 0px;
+}
+
+/* Header */
+
+header a#banner {
+    margin: 0px;
+    border-bottom: 1px solid black;
+}
+
+header img {
+    width: 100%;
+}
+
+header nav#chapters {
+    background-color: hsl(210, 25%, 50%);
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+header nav#chapters::after {
+    clear:both;
+    content: "";
+    display: table;
+}
+
+header nav#chapters li {
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+header nav#chapters li a {
+    display: block;
+    width: 100%;
+    padding: 9px 0px;
+    text-align: center;
+    background-color: hsl(210, 25%, 50%);
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+header nav#chapters li a:hover {
+    background-color: hsl(210, 25%, 25%);
+}
+
+header nav#sequential::after {
+    clear:both;
+    content: "";
+    display: table;
+}
+
+header nav#sequential li {
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding: 18px 0px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+header nav#sequential li h1 {
+    font-size: 24px;
+}
+
+header nav#sequential li a {
+    color: black;
+}
+
+header nav#sequential li a:hover {
+    color: hsl(210, 25%, 50%);
+}
+
+/* Article */
+
+article {
+    padding: 18px;
+    font-size: 18px;
+    columns: 400px 2;
+    column-gap: 36px;
+    column-rule: 1px solid hsl(210, 25%, 75%);
+    orphans: 2;
+    widows: 2;
+}
+
+article h1 {
+    font-size: 24px;
+    color: hsl(210, 50%, 50%);
+    margin: 18px auto 9px;
+}
+
+article h1:first-of-type {
+    margin: 0px auto 9px;
+}
+
+article p {
+    margin: 9px auto;
+}
+
+article img {
+    display: block;
+    margin: 9px auto;
+}
+
+article nav#lessons {
+    padding: 0px 18px;
+}
+
+article nav#lessons li {
+    list-style: square;
+    margin: 9px auto 9px;
+}
+
+article nav#lessons li a {
+    color: black;
+}
+
+article nav#lessons li a:hover {
+    color: hsl(210, 25%, 50%);
+}
+
+/* Special Styles/Markups */
+
+article .note {
+    text-align: center;
+    font-style: italic;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+article .equation {
+    text-align: center;
+    font-size: 21px;
+}
+
+article .overline {
+    text-decoration: overline;
+}
+
+article mark {
+    background-color: hsl(210, 50%, 75%);
+}
+
+/* Table */
+
+article table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article table th, table td {
+    border: 1px solid black;
+    padding: 9px;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid black;
+    background-color: hsl(210, 25%, 50%);
+    padding: 9px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 9px auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: hsl(210, 25%, 75%);
+}

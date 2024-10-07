@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Sets and Intervals</title>
+        <link href="css/base.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" id="banner"><img src="img/banner2.png" alt="Functions Forever Banner"/></a>
+            <nav id="chapters">
+                <ul>
+                    <li><a href="1-function-basics.html">Chapter 1: Function Basics</a></li>
+                    <li><a href="#">Chapter 2: Algebraic Functions</a></li>
+                    <li><a href="#">Chapter 3: Transcendental Functions</a></li>
+                </ul>
+            </nav>
+            <nav id="sequential">
+                <ul>
+                    <li><a href="1-function-basics.html">&#x003C;&#x003C; Chapter 1</a></li>
+                    <li><h1>Lesson 1A: Sets and Intervals</h1></li>
+                    <li><a href="#">Lesson 1B >></a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1>Introduction to Sets</h1>
+            <p>A <mark>set</mark> is a collection of objects.
+                Each object in a set is called an <mark>element</mark>.
+                We can define a set by listing out its elements:</p>
+            <p class="equation">A = {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ...}</p>
+            <p>For example, the set of <mark>natural numbers</mark> would be:</p>
+            <p class="equation">&#x2115; = {1, 2, 3, 4, ...}</p>
+            <p>And the set of integers would be:</p>
+            <p class="equation">&#x2124; = {..., -2, -1, 0, 1, 2, ...}</p>
+            <p>To denote that a<sub>1</sub> is an element of a set A, we write:</p>
+            <p class="equation">a<sub>1</sub> &#x2208; A</p>
+            <p>For example, to denote that 245 is an element of the natural numbers,
+                we would write:</p>
+            <p class="equation">245 &#x2208; &#x2115;</p>
+            <p>Some sets are completely included inside of other sets. For
+                example, suppose A = {a, b, c} and B = {a, b, c, d, e}. Then
+                we would say that A is a <mark>subset</mark> of B and we would write:</p>
+            <p class="equation">A &#x2282; B</p>
+            <p>For example, to denote that the natural numbers are a subset of the integers,
+                we would write:</p>
+            <p class="equation">&#x2115; &#x2282; &#x2124;</p>
+            <h1>Common Sets of Numbers</h1>
+            <p> There are some sets of numbers that we use often, such as natural numbers
+                and integers. These sets have been assigned special names and symbols.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Description</th>
+                        <th>Elements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><mark>Natural Numbers</mark></td>
+                        <td>&#x2115;</td>
+                        <td>The counting numbers starting at 1</td>
+                        <td>1, 2, 3, 4, 5, 6, ...</td>
+                    </tr>
+                    <tr>
+                        <td><mark>Integers</mark></td>
+                        <td>&#x2124;</td>
+                        <td>The natural numbers plus the negative whole numbers and zero</td>
+                        <td>..., -2, -1, 0, 1, 2, ...</td>
+                    </tr>
+                    <tr>
+                        <td><mark>Rational Numbers</mark></td>
+                        <td>&#x211A;</td>
+                        <td>The integers plus fractions</td>
+                        <td>examples: 1, -<sup>1</sup>/<sub>2</sub>, <sup>17</sup>/<sub>54</sub></td>
+                    </tr>
+                    <tr>
+                        <td><mark>Real Numbers</mark></td>
+                        <td>&#x211D;</td>
+                        <td>The rational numbers plus irrational numbers<br>
+                            (numbers that can't be written as fractions)</td>
+                        <td>examples: 1, -<sup>1</sup>/<sub>2</sub>, &#x221A;<span class="overline">2</span>, &#x03C0;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>You might have noticed that the natural numbers are a subset of the integers.
+                Similarly, the integers are a subset of the rational numbers, and the rational
+                numbers are a subset of the real numbers. We can write this all out as:</p>
+            <p class="equation">&#x2115; &#x2282; &#x2124; &#x2282; &#x211A; &#x2282; &#x211D;</p>
+            <h1>Set-Builder Notation</h1>
+            <p>Sometimes it is impractical to list out all of the numbers in a set. In this
+                case, often we will use a special notation called <mark>set-builder notation</mark>.
+                This notation defines the set by describing the properties of the numbers
+                that are elements of the set. See the following example:</p>
+            <p class="equation">{x | -4 &#x003C; x &#x003C; 7, x &#x2208; &#x2124;}</p>
+            <p class="note">Note: This means "the set of numbers x such that x is between
+                -4 and 7 and x is an integer."</p>
+            <p>If we were to list out all the elements of this set, it would look like this:</p>
+            <p class="equation">{-3, -2, -1, 0, 1, 2, 3, 4, 5, 6}</p>
+            <p>Here is another example, showing how we could write "the set of all rational
+                numbers between <sup>1</sup>/<sub>2</sub> and 50":</p>
+            <p class="equation">{x | <sup>1</sup>/<sub>2</sub> &#x003C; x &#x003C; 50, x &#x2208; &#x211A;}</p>
+            <p>We can even use set-builder notation to represent more complicated sets,
+                such as the even numbers:</p>
+            <p class="equation">{x | x = 2n, n &#x2208; &#x2124;}</p>
+            <h1>Intervals</h1>
+            <p>One type of set that we use very often is the <mark>interval</mark>. An
+                interval is the set of all real numbers between two endpoints. For example,
+                if we wanted the set of all real numbers greater than 1 and less than or
+                equal to 15, we could write:</p>
+            <p class="equation">{x | 1 &#x003C; x &#x2264; 15}</p>
+            <p class="note">Note: If we do not indicate what type of number x is,
+                it is just assumed to be a real number.</p>
+            <p>Since we use intervals so often, we have a special way to write them called
+                <mark>interval notation</mark>. We could write the set above using interval
+                notation in this way:</p>
+            <p class="equation">(1, 15]</p>
+            <p class="note">Note: The round bracket ( means "don't include 1". The square
+                bracket ] means "do include 15".</p>
+            <p>See the table below for a complete list of different types of intervals:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Bounded Intervals</th>
+                        <th colspan="2">Unbounded Intervals</th>
+                    </tr>
+                    <tr>
+                        <th>Set-Builder Notation</th>
+                        <th>Interval Notation</th>
+                        <th>Set-Builder Notation</th>
+                        <th>Interval Notation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="equation">{x | a &#x003C; x &#x003C; b}</td>
+                        <td class="equation">(a, b)</td>
+                        <td class="equation">{x | x &#x003C; a}</td>
+                        <td class="equation">(-&#x221E;, a)</td>
+                    </tr>
+                    <tr>
+                        <td class="equation">{x | a &#x2264; x &#x2264; b}</td>
+                        <td class="equation">[a, b]</td>
+                        <td class="equation">{x | x &#x003E; a}</td>
+                        <td class="equation">(a, &#x221E;)</td>
+                    </tr>
+                    <tr>
+                        <td class="equation">{x | a &#x003C; x &#x2264; b}</td>
+                        <td class="equation">(a, b]</td>
+                        <td class="equation">{x | x &#x2264; a}</td>
+                        <td class="equation">(-&#x221E;, a]</td>
+                    </tr>
+                    <tr>
+                        <td class="equation">{x | a &#x2264; x &#x003C; b}</td>
+                        <td class="equation">[a, b)</td>
+                        <td class="equation">{x | x &#x2265; a}</td>
+                        <td class="equation">[a, &#x221E;)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <footer>
+            <p><a href="index.html">Functions Forever</a> by Peter Thompson</p>
+            <p>Contact: <a href="#">Email</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a> </p>
+        </footer>
+    </body>
+
+</html>
